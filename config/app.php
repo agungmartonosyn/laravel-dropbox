@@ -165,7 +165,8 @@ return [
         /*
          * Package Service Providers...
          */
-
+        App\Providers\DropboxServiceProvider::class,
+        App\Providers\GoogleDriveServiceProvider::class,
         /*
          * Application Service Providers...
          */

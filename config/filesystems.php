@@ -64,6 +64,20 @@ return [
             'url' => env('AWS_URL'),
         ],
 
+        'dropbox'=>[
+            'driver' =>'dropbox',
+            'autorizationToken'=>env('DROPBOX_ACCESS_TOKEN')
+        ],
+
+        'google' => [
+            'driver' => 'google',
+            'clientId' => env("GOOGLE_CLIENT_ID"),
+            'clientSecret' => env("GOOGLE_CLIENT_SECRET"),
+            'refreshToken' => env("GOOGLE_REFRESH_TOKEN"),
+            'folderId' => env("GOOGLE_DRIVE_FOLDER_ID"),
+        ],
+
+
     ],
 
 ];
